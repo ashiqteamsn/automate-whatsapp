@@ -4,10 +4,9 @@ from pymongo import MongoClient
 from datetime import datetime
 
 cluster = MongoClient("mongodb+srv://ashiqteamsn:gpqjgpiOLmH3DDw7@cluster0.exlsq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-db = cluster["swastik"]
+db = cluster["bakery"]
 users = db["users"]
 orders = db["orders"]
-
 
 app = Flask(__name__)
 
