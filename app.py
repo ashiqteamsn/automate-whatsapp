@@ -2,7 +2,7 @@ from flask import Flask, request
 from pymongo import MongoClient
 from datetime import datetime
 
-cluster = MongoClient("mongodb+srv://ashiqteamsn:gpqjgpiOLmH3DDw7@cluster0.70esx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", tls=True, tlsAllowInvalidCertificates=True)
+cluster = MongoClient("mongodb+srv://ashiqteamsn:gpqjgpiOLmH3DDw7@cluster0.70esx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 db = cluster["bakery"]
 users = db["users"]
 orders = db["orders"]
