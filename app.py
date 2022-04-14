@@ -8,6 +8,7 @@ db = cluster["swastik"]
 users = db["users"]
 orders = db["orders"]
 
+
 app = Flask(__name__)
 
 
